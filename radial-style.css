@@ -6,8 +6,9 @@ body,html{
 body{
 	background: #E3DFD2;
 	background-image: url(assets/first\ holding\ hands.jpeg);
-	/* position: relative; */
-	/* top: -100px; */
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 	box-shadow: inset 0 0 20vmin 0 #585247;
 }
 .wrap{
