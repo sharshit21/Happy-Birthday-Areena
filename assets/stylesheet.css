@@ -1310,14 +1310,25 @@ audio {
         background-color: #272728;
     }
 @media only screen and (max-width: 600px) {
-    .balloons {
-        position: relative;
-        top: 50px; /* Adjust the positioning for smaller screens */
-        width: 80px;
-        height: auto;
+     .balloons {
+        position: relative; /* Change from fixed to relative for responsiveness */
+        width: 80px;  /* Adjust size for smaller screens */
+        height: auto; /* Keep the aspect ratio */
+        bottom: 0;    /* Adjust bottom position */
+        opacity: 1;   /* Make sure the balloons are visible */
+        z-index: 10;  /* Ensure balloons appear above other elements */
     }
+
     .balloons h2 {
-        font-size: 16px; /* Adjust font size for better visibility */
+        font-size: 14px;  /* Adjust font size for smaller screens */
+        display: block;   /* Ensure text is displayed if any */
+    }
+
+    /* Specific balloon adjustments */
+    #b1, #b2, #b3, #b4, #b5, #b6, #b7 {
+        background-image: url('assets/black-balloon.png');  /* Make sure the image path is correct */
+        background-size: contain;  /* Ensure the balloon fits well */
+        background-repeat: no-repeat;
     }
 }
 @media only screen and (max-width: 600px) {
