@@ -29,13 +29,7 @@ body{
     transition: transform .5s, opacity .5s;
     margin: 0 auto;
 }
-@media only screen and (max-width: 600px) {
-    .wrap {
-        width: 65vmin; /* Smaller size for smaller devices */
-        height: 65vmin;
-        transform: scale(0.7); /* Adjust for better view on mobile */
-    }
-}
+
 
 a{
 	position: absolute;
@@ -160,25 +154,32 @@ a:hover div{
 }
 @media only screen and (max-width: 600px) {
     a {
-        width: 40%; /* Reduce size for iPhones */
-        height: 40%;
+        width: 45%; /* Consistent width for all child elements */
+        height: 45%; /* Consistent height */
+        transform: scale(0.9); /* Adjust scaling for smaller screens */
     }
 
     a:nth-child(5) {
-        width: 50%; /* Adjust central circle size */
+        width: 50%; /* Slightly larger for the center element */
         height: 50%;
         top: 25%;
         left: 25%;
     }
 
+    .wrap {
+        width: 70vmin; /* Uniform wrap size */
+        height: 70vmin;
+        transform: scale(0.8); /* Adjust wrap scale */
+    }
+
     /* Adjust hover scaling for smaller screens */
     span:hover + .wrap, .wrap:hover {
-        transform: scale(0.9) translateZ(0px);
+        transform: scale(0.85) translateZ(0px); /* Slightly smaller hover scale */
     }
 
     span {
-        top: 50vmin; /* Center on small screens */
-        width: 12vmin;
+        top: 50vmin; /* Center span on small screens */
+        width: 12vmin; /* Consistent size */
         height: 12vmin;
     }
 }
