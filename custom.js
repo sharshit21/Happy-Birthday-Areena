@@ -42,17 +42,23 @@ $(document).ready(function () {
     // Set different animation speeds for iPhones
     var balloonAnimationSpeed = (screenWidth <= 600) ? 3000 : 1500; // Slow speed for iPhones
 
-    // Balloons flying animation
+    // Balloons flying animation when the button is clicked
     $('#balloons_flying').on('click', function () {
-        // Example for the first balloon
+        // Ensure balloons become visible when button is clicked
+        $('#b1, #b2, #b3, #b4, #b5, #b6, #b7').css({
+            'opacity': '1',       // Set balloons visible only when the button is clicked
+            'z-index': '10'       // Ensure they appear in front
+        });
+
+        // Balloons flying animation (with staggered delay)
         $('#b1').animate({ top: '-500px' }, balloonAnimationSpeed);
         $('#b2').animate({ top: '-500px' }, balloonAnimationSpeed + 200); // Slight delay
         $('#b3').animate({ top: '-500px' }, balloonAnimationSpeed + 400); // More delay for staggered effect
-        // Continue for other balloons...
         $('#b4').animate({ top: '-500px' }, balloonAnimationSpeed + 600);
         $('#b5').animate({ top: '-500px' }, balloonAnimationSpeed + 800);
         $('#b6').animate({ top: '-500px' }, balloonAnimationSpeed + 1000);
         $('#b7').animate({ top: '-500px' }, balloonAnimationSpeed + 1200);
     });
 });
+
 
