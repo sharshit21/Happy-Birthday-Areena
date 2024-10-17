@@ -30,9 +30,9 @@ var config = {
     // button text description, the following is the default button text, in English, you can change it to your favorite text
     desc: {
         turn_on: "Hey Girl",
-        play: "I want to be with u for a thousand years",
-        bannar_coming: "Looking for some decor??",
-        balloons_flying: "Looks like something is missing.... yaa my presence!!",
+        play: "I love you for a thousand years (shocked?..don't be)",
+        bannar_coming: "See told you, jst a song 😊. Where's the decor??",
+        balloons_flying: "Looks like something is missing.. yaa my presence!!",
         cake_fadein: "I knw I look like a balloon....BTW Cake?",
         light_candle: "Jst ask for a wish and I will fulfill it",
         wish_message: "Happiest Birthday Areena ❤️",
