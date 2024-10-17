@@ -4,6 +4,10 @@ $(function () {
     config.texts.forEach(function (item) {
         let p = document.createElement("p");
         p.innerHTML = item;
+        if ($(window).width() <= 600) {
+            p.style.fontSize = "14px"; // Smaller font size on iPhones
+            p.style.lineHeight = "1.4"; // Adjust line height for better spacing
+        }
         if (config.imgs && config.imgs[item]) {
             let img = document.createElement("img");
             img.src = config.imgs[item];
@@ -15,6 +19,14 @@ $(function () {
     $("#texts-container").append(dom.innerHTML);
 });
 
+$(function () {
+    if ($(window).width() <= 600) {
+        $(".btn").css({
+            "font-size": "12px", // Smaller font size
+            "padding": "8px 10px", // Adjust padding
+        });
+    }
+});
 $(function () {
     for (let k in config.desc) {
         let dom = $("#" + k);
