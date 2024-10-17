@@ -32,26 +32,25 @@ a{
 }
 a div{
 	height: 100%;
-/* 	position: relative; */
-	/* top: -10px; */
 	background-size: cover;
+	background-position: center; /* Center the image */
 	opacity: .5;
 	transition: opacity .5s;
 	border-radius: inherit;
-
 }
-a:nth-child(1)
-{
+
+a:nth-child(1) {
 	border-radius: 40vmin 0 0 0;
 	transform-origin: 110% 110%;
 	transition: transform .4s .15s;
 }
 a:nth-child(1) div{
 	background-image:url('assets/regional\ image.jpeg');
+	background-size: 150%; /* Adjust to fit better */
+	background-position: top; /* Focus on the upper part of the image */
 }
 
-a:nth-child(2)
-{
+a:nth-child(2) {
 	border-radius: 0 40vmin 0 0;
 	left: 52.5%;
 	transform-origin: -10% 110%;
@@ -59,11 +58,11 @@ a:nth-child(2)
 }
 a:nth-child(2) div{
 	background-image:url('assets/heart\ car\ image.jpeg');
+	background-size: 150%;
+	background-position: center;
 }
 
-
-a:nth-child(3)
-{
+a:nth-child(3) {
 	border-radius: 0 0 0 40vmin;
 	top: 52.5%;
 	transform-origin: 110% -10%;
@@ -71,9 +70,10 @@ a:nth-child(3)
 }
 a:nth-child(3) div{
 	background-image:url('assets/restro\ image.jpeg');
+	background-size: 150%;
+	background-position: center;
 }
-a:nth-child(4)
-{
+a:nth-child(4) {
 	border-radius: 0 0 40vmin 0;
 	top: 52.5%; left: 52.5%;
 	transform-origin: -10% -10%;
@@ -81,11 +81,11 @@ a:nth-child(4)
 }
 a:nth-child(4) div{
 	background-image: url('assets/holding\ hands.jpeg');
+	background-size: 150%;
+	background-position: center;
 }
 
-
-a:nth-child(5)
-{
+a:nth-child(5) {
 	border-radius: 50vmin;
 	width: 55%; height: 55%;
 	top: 22.5%; left: 22.5%;
@@ -95,6 +95,8 @@ a:nth-child(5)
 }
 a:nth-child(5) div{
 	background-image: url('assets/new_hands.JPG');
+	background-size: cover; /* Ensure it covers the circle fully */
+	background-position: center;
 }
 
 span{
@@ -141,9 +143,3 @@ a:hover div{
 	opacity: 1;
 	transform: translateZ(0px);
 }
-
-
-
-
-
-
