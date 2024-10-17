@@ -15,7 +15,7 @@ body{
 	position: relative;
 	width: 80vmin;
 	height: 80vmin;
-	background: inherit;
+	background: transparent;
 	transform: scale(0.2) translateZ(0px);
 	opacity: 0;
 	transition: transform .5s, opacity .5s;
