@@ -54,7 +54,7 @@ a:nth-child(1) {
 	transition: transform .4s .15s;
 }
 a:nth-child(1) div{
-	background-image:url('assets/1st.WEBP');
+	background-image:url('assets/vid_ss.PNG');
 	background-size: 150%; /* Adjust to fit better */
 	background-position: top; /* Focus on the upper part of the image */
 }
@@ -66,7 +66,7 @@ a:nth-child(2) {
 	transition: transform .4s .2s;
 }
 a:nth-child(2) div{
-	background-image:url('assets/2nd.WEBP');
+	background-image:url('assets/right_face.PNG');
 	background-size: 150%;
 	background-position: center;
 }
@@ -78,7 +78,7 @@ a:nth-child(3) {
 	transition: transform .4s .25s;
 }
 a:nth-child(3) div{
-	background-image:url('assets/3rd.WEBP');
+	background-image:url('assets/left_face.PNG');
 	background-size: 150%;
 	background-position: center;
 }
@@ -89,7 +89,7 @@ a:nth-child(4) {
 	transition: transform .4s .3s;
 }
 a:nth-child(4) div{
-	background-image: url('assets/4th.WEBP');
+	background-image: url('assets/standing.PNG');
 	background-size: 150%;
 	background-position: center;
 }
